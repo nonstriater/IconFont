@@ -13,6 +13,12 @@
 		723BD32C1DC098BE00B393A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723BD32A1DC098BE00B393A6 /* Main.storyboard */; };
 		723BD32E1DC098BE00B393A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 723BD32D1DC098BE00B393A6 /* Assets.xcassets */; };
 		723BD3311DC098BE00B393A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 723BD32F1DC098BE00B393A6 /* LaunchScreen.storyboard */; };
+		723BD33B1DC098EF00B393A6 /* ONEIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 723BD33A1DC098EF00B393A6 /* ONEIconFont.m */; };
+		723BD3411DC099C500B393A6 /* UIImage+IconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 723BD3401DC099C500B393A6 /* UIImage+IconFont.m */; };
+		723BD3441DC099D800B393A6 /* ONEFontImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 723BD3431DC099D800B393A6 /* ONEFontImage.m */; };
+		723BD3471DC09A7000B393A6 /* ONEIconInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 723BD3461DC09A7000B393A6 /* ONEIconInfo.m */; };
+		723BD34A1DC0AD9400B393A6 /* ONEHomeFontImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 723BD3491DC0AD9400B393A6 /* ONEHomeFontImage.m */; };
+		728E6A971DC200D400470A80 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 728E6A951DC1F80900470A80 /* icomoon.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,17 @@
 		723BD32D1DC098BE00B393A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		723BD3301DC098BE00B393A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		723BD3321DC098BE00B393A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		723BD3391DC098EF00B393A6 /* ONEIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONEIconFont.h; sourceTree = "<group>"; };
+		723BD33A1DC098EF00B393A6 /* ONEIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONEIconFont.m; sourceTree = "<group>"; };
+		723BD33F1DC099C500B393A6 /* UIImage+IconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+IconFont.h"; sourceTree = "<group>"; };
+		723BD3401DC099C500B393A6 /* UIImage+IconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+IconFont.m"; sourceTree = "<group>"; };
+		723BD3421DC099D800B393A6 /* ONEFontImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONEFontImage.h; sourceTree = "<group>"; };
+		723BD3431DC099D800B393A6 /* ONEFontImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONEFontImage.m; sourceTree = "<group>"; };
+		723BD3451DC09A7000B393A6 /* ONEIconInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONEIconInfo.h; sourceTree = "<group>"; };
+		723BD3461DC09A7000B393A6 /* ONEIconInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONEIconInfo.m; sourceTree = "<group>"; };
+		723BD3481DC0AD9400B393A6 /* ONEHomeFontImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ONEHomeFontImage.h; sourceTree = "<group>"; };
+		723BD3491DC0AD9400B393A6 /* ONEHomeFontImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ONEHomeFontImage.m; sourceTree = "<group>"; };
+		728E6A951DC1F80900470A80 /* icomoon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = icomoon.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +75,10 @@
 		723BD3201DC098BE00B393A6 /* IconFontTest */ = {
 			isa = PBXGroup;
 			children = (
+				723BD3381DC098E000B393A6 /* IconFont */,
 				723BD3241DC098BE00B393A6 /* AppDelegate.h */,
 				723BD3251DC098BE00B393A6 /* AppDelegate.m */,
+				728E6A951DC1F80900470A80 /* icomoon.ttf */,
 				723BD3271DC098BE00B393A6 /* ViewController.h */,
 				723BD3281DC098BE00B393A6 /* ViewController.m */,
 				723BD32A1DC098BE00B393A6 /* Main.storyboard */,
@@ -77,6 +96,23 @@
 				723BD3221DC098BE00B393A6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		723BD3381DC098E000B393A6 /* IconFont */ = {
+			isa = PBXGroup;
+			children = (
+				723BD3391DC098EF00B393A6 /* ONEIconFont.h */,
+				723BD33A1DC098EF00B393A6 /* ONEIconFont.m */,
+				723BD3451DC09A7000B393A6 /* ONEIconInfo.h */,
+				723BD3461DC09A7000B393A6 /* ONEIconInfo.m */,
+				723BD33F1DC099C500B393A6 /* UIImage+IconFont.h */,
+				723BD3401DC099C500B393A6 /* UIImage+IconFont.m */,
+				723BD3421DC099D800B393A6 /* ONEFontImage.h */,
+				723BD3431DC099D800B393A6 /* ONEFontImage.m */,
+				723BD3481DC0AD9400B393A6 /* ONEHomeFontImage.h */,
+				723BD3491DC0AD9400B393A6 /* ONEHomeFontImage.m */,
+			);
+			path = IconFont;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +146,7 @@
 				TargetAttributes = {
 					723BD31D1DC098BE00B393A6 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3KQG33P93J;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				728E6A971DC200D400470A80 /* icomoon.ttf in Resources */,
 				723BD3311DC098BE00B393A6 /* LaunchScreen.storyboard in Resources */,
 				723BD32E1DC098BE00B393A6 /* Assets.xcassets in Resources */,
 				723BD32C1DC098BE00B393A6 /* Main.storyboard in Resources */,
@@ -152,7 +190,12 @@
 			files = (
 				723BD3291DC098BE00B393A6 /* ViewController.m in Sources */,
 				723BD3261DC098BE00B393A6 /* AppDelegate.m in Sources */,
+				723BD34A1DC0AD9400B393A6 /* ONEHomeFontImage.m in Sources */,
+				723BD33B1DC098EF00B393A6 /* ONEIconFont.m in Sources */,
+				723BD3441DC099D800B393A6 /* ONEFontImage.m in Sources */,
 				723BD3231DC098BE00B393A6 /* main.m in Sources */,
+				723BD3411DC099C500B393A6 /* UIImage+IconFont.m in Sources */,
+				723BD3471DC09A7000B393A6 /* ONEIconInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +313,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				DEVELOPMENT_TEAM = 3KQG33P93J;
 				INFOPLIST_FILE = IconFontTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nonstriater.IconFontTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -281,7 +327,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				DEVELOPMENT_TEAM = 3KQG33P93J;
 				INFOPLIST_FILE = IconFontTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nonstriater.IconFontTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,6 +356,7 @@
 				723BD3371DC098BE00B393A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
